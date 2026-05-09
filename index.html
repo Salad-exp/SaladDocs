@@ -1331,11 +1331,7 @@ label.Parent <span class="op">=</span> hui</code></pre>
   <div class="page-header">
     <div class="breadcrumb">Instances <span>/</span> fireclickdetector</div>
     <h1 class="page-title"><code>fireclickdetector</code></h1>
-    <p class="page-desc">Triggers a <code>ClickDetector</code> event remotely, bypassing distance and interaction requirements. Should not be implemented in Luau as it creates easy detection vectors.</p>
-  </div>
-  <div class="admonition adm-warning">
-    <div class="admonition-title">Warning: Avoid Luau implementation</div>
-    This function should not be implemented in Luau. Doing so exposes you to easy detection vectors.
+    <p class="page-desc">Triggers a <code>ClickDetector</code> event remotely, bypassing distance and interaction requirements.</p>
   </div>
   <div class="signature-block"><code><span class="kw">function</span> <span class="fn">fireclickdetector</span>(detector: ClickDetector, distance?: number, event?: string): ()</code></div>
   <h2>Parameters</h2>
@@ -1743,10 +1739,6 @@ ws<span class="punct">:</span><span class="fn">Close</span><span class="punct">(
     <div class="breadcrumb">Closures <span>/</span> hookmetamethod</div>
     <h1 class="page-title"><code>hookmetamethod</code></h1>
     <p class="page-desc">Hooks a specific metamethod on any object that has a metatable. Internally uses <code>hookfunction</code> to redirect the target metamethod.</p>
-  </div>
-  <div class="admonition adm-info">
-    <div class="admonition-title">Note</div>
-    This can be safely implemented in Luau as long as <code>hookfunction</code> is already properly implemented in C++.
   </div>
   <div class="signature-block"><code><span class="kw">function</span> <span class="fn">hookmetamethod</span>(object: table | Instance | userdata, metamethod: string, hook: (...any) -> (...any)): (...any) -> (...any)</code></div>
   <h2>Parameters</h2>
@@ -2202,10 +2194,6 @@ sound<span class="punct">:</span><span class="fn">Play</span><span class="punct"
     <h1 class="page-title"><code>fireproximityprompt</code></h1>
     <p class="page-desc">Instantly triggers a <code>ProximityPrompt</code>, bypassing its hold duration and activation distance.</p>
   </div>
-  <div class="admonition adm-warning">
-    <div class="admonition-title">Warning: Avoid Luau implementation</div>
-    Should not be implemented in Luau — doing so creates easy detection vectors.
-  </div>
   <div class="signature-block"><code><span class="kw">function</span> <span class="fn">fireproximityprompt</span>(prompt: ProximityPrompt): ()</code></div>
   <h2>Parameters</h2>
   <table class="params-table">
@@ -2232,10 +2220,6 @@ prompt.Triggered<span class="punct">:</span><span class="fn">Connect</span><span
     <div class="breadcrumb">Instances <span>/</span> firetouchinterest</div>
     <h1 class="page-title"><code>firetouchinterest</code></h1>
     <p class="page-desc">Simulates a physical touch event between two <code>BasePart</code> objects, firing either a touch start or touch end.</p>
-  </div>
-  <div class="admonition adm-warning">
-    <div class="admonition-title">Warning: Avoid Luau implementation</div>
-    Should not be implemented in Luau — doing so creates easy detection vectors.
   </div>
   <div class="signature-block"><code><span class="kw">function</span> <span class="fn">firetouchinterest</span>(part1: BasePart, part2: BasePart, toggle: boolean | number): ()</code></div>
   <h2>Parameters</h2>
